@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flavortext{
+    @apply text-7xl font-display text-white shadow-md;
+}
+
+/* .speech-bubble {
+	width:500px;
+	height:300px;
+}
+
+.bub-part-a {
+	margin-left:6px;
+	width:calc(100% - 12px);
+	height:2px;
+	background:(#222);
+}
+
+.bub-part-b {
+	margin-left:4px;
+	width:calc(100% - 12px);
+	height:2px;
+	background:var(#FA983A);
+	border-left:2px solid (#222);
+	border-right:2px solid (#222);
+}
+
+.bub-part-c {
+	margin-left:2px;
+	width:calc(100% - 8px);
+	height:2px;
+	background:(#FA983A);
+	border-left:2px solid (#222);
+	border-right:2px solid (#222);
+}
+
+.speech-txt {
+	width:calc(100% - 24px);
+	padding:10px;
+	font-family:silkscreen;
+	font-size:14px;
+	color:(#000);
+	text-align:justify;
+	background:var(#FA983A);
+	border-left:2px solid (#222);
+	border-right:2px solid (#222);
+} */
