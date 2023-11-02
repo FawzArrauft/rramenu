@@ -6,6 +6,10 @@
     @apply text-7xl font-display text-white shadow-md;
 }
 
+.btnketerangan{
+	@apply bg-blue-500 hover:bg-blue-600 p-2.5 rounded-full border-[5px] absolute border-white;
+}
+
 /* .speech-bubble {
 	width:500px;
 	height:300px;

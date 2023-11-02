@@ -10,7 +10,8 @@ export default {
         display: ['Passion One', 'sans-serif'],
         display2: ['Road Rage', 'sans-serif'],
         buttontext: ['Jomhuria', 'serif'],
-        keterangan: ['Silkscreen', 'sans-serif']
+        keterangan: ['Silkscreen', 'sans-serif'],
+        foodname: ['Timmana', 'sans-serif']
       },
       backgroundImage: {
         'darkpattern': "url(./assets/img/backgroundpaper.jpg)",
