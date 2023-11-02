@@ -11,7 +11,7 @@ import Bahan3 from "../assets/img/tortila.jpeg";
 import Icon from "../assets/img/mangi.png";
 import { Link } from "react-router-dom";
 
-const Menu1 = () => {
+const Menu3 = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [popupContent, setPopupContent] = useState("");
   const [popupImage, setPopupImage] = useState("");
@@ -55,7 +55,7 @@ const Menu1 = () => {
           <span className="flex items-center justify-center gap-1">
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
+            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
           </span>
@@ -65,7 +65,7 @@ const Menu1 = () => {
           <span className="flex items-center justify-center gap-1">
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
+            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
           </span>
@@ -76,7 +76,7 @@ const Menu1 = () => {
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
+            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
           </span>
         </div>
@@ -86,7 +86,7 @@ const Menu1 = () => {
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
+            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
           </span>
         </div>
@@ -96,7 +96,7 @@ const Menu1 = () => {
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
+            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
           </span>
         </div>
@@ -135,9 +135,42 @@ const Menu1 = () => {
               className="btnketerangan top-[350px] left-[250px]"
               onClick={() =>
                 openPopup(
-                  "Keju yang dilelehkan hingga creamy dan gurihnya meleleh di mulut",
+                  "Roti pipih lembut yang terbuat dari jagung, memberikan dasar yang sempurna untuk sajian taco.",
                   Bahan1,
-                  "Cheese Sauce" // Menetapkan judul pop-up
+                  "Corn Tortilla" // Menetapkan judul pop-up
+                )
+              }
+            >
+            </button>
+            <button
+              className="btnketerangan top-[280px] left-[310px]"
+              onClick={() =>
+                openPopup(
+                  "Daging sapi panggang yang menggoda dengan cita rasa yang tajam dan gurih.",
+                  Bahan2,
+                  "Beef Gril" // Menetapkan judul pop-up
+                )
+              }
+            >
+            </button>
+            <button
+              className="btnketerangan top-[200px] left-[550px]"
+              onClick={() =>
+                openPopup(
+                  "Krim asam yang telah mengalami proses fermentasi dengan bakteri asam laktik, memberikan kelezatan dan tekstur unik.",
+                  Bahan2,
+                  "Sour Cream" // Menetapkan judul pop-up
+                )
+              }
+            >
+            </button>
+            <button
+              className="btnketerangan top-[450px] left-[410px]"
+              onClick={() =>
+                openPopup(
+                  "Selada segar yang ditanam di green house kami sendiri, memberikan kecrispyan pada setiap gigitan.",
+                  Bahan2,
+                  "Selada" // Menetapkan judul pop-up
                 )
               }
             >
@@ -146,20 +179,9 @@ const Menu1 = () => {
               className="btnketerangan top-[170px] left-[310px]"
               onClick={() =>
                 openPopup(
-                  "Campuran segar dengan tomat cincang, bawang bombay, garam, air jeruk nipis, gula, dan jeruk nipis yang berasal dari petani lokal di Bandung.",
+                  "Campuran tomat cincang, bawang bombay, dengan sentuhan garam, gula, dan air jeruk nipis yang segar.",
                   Bahan2,
                   "Pico de Gallo" // Menetapkan judul pop-up
-                )
-              }
-            >
-            </button>
-            <button
-              className="btnketerangan top-[110px] left-[150px]"
-              onClick={() =>
-                openPopup(
-                  "Keripik tortilla yang ciptakan dari jagung segar, memberikan rasa renyah dan autentik.",
-                  Bahan3,
-                  "Tortilla Chip" // Menetapkan judul pop-up
                 )
               }
             >
@@ -169,40 +191,62 @@ const Menu1 = () => {
 
         {isPopupOpen ? (
           <div className="absolute">
-            <button
-              className="btnketerangan top-[350px] left-[420px]"
-              onClick={() =>
-                openPopup(
-                    "Keju yang dilelehkan hingga creamy dan gurihnya meleleh di mulut",
-                    Bahan1,
-                    "Cheese Sauce" // Menetapkan judul pop-up
-                )
-              }
-            >
-            </button>
-            <button
-              className="btnketerangan top-[170px] left-[470px]"
-              onClick={() =>
-                openPopup(
-                    "Campuran segar dengan tomat cincang, bawang bombay, garam, air jeruk nipis, gula, dan jeruk nipis yang berasal dari petani lokal di Bandung.",
-                    Bahan2,
-                    "Pico de Gallo" // Menetapkan judul pop-up
-                )
-              }
-            >
-            </button>
-            <button
-              className="btnketerangan top-[110px] left-[310px]"
-              onClick={() =>
-                openPopup(
-                    "Keripik tortilla yang ciptakan dari jagung segar, memberikan rasa renyah dan autentik.",
-                    Bahan3,
-                    "Tortilla Chip" // Menetapkan judul pop-up
-                )
-              }
-            >
-            </button>
-          </div>
+          <button
+            className="btnketerangan top-[350px] left-[420px]"
+            onClick={() =>
+              openPopup(
+                "Roti pipih lembut yang terbuat dari jagung, memberikan dasar yang sempurna untuk sajian taco.",
+                Bahan1,
+                "Corn Tortilla" // Menetapkan judul pop-up
+              )
+            }
+          >
+          </button>
+          <button
+            className="btnketerangan top-[280px] left-[475px]"
+            onClick={() =>
+              openPopup(
+                "Daging sapi panggang yang menggoda dengan cita rasa yang tajam dan gurih.",
+                Bahan2,
+                "Beef Gril" // Menetapkan judul pop-up
+              )
+            }
+          >
+          </button>
+          <button
+            className="btnketerangan top-[200px] left-[710px]"
+            onClick={() =>
+              openPopup(
+                "Krim asam yang telah mengalami proses fermentasi dengan bakteri asam laktik, memberikan kelezatan dan tekstur unik.",
+                Bahan2,
+                "Sour Cream" // Menetapkan judul pop-up
+              )
+            }
+          >
+          </button>
+          <button
+            className="btnketerangan top-[450px] left-[570px]"
+            onClick={() =>
+              openPopup(
+                "Selada segar yang ditanam di green house kami sendiri, memberikan kecrispyan pada setiap gigitan.",
+                Bahan2,
+                "Selada" // Menetapkan judul pop-up
+              )
+            }
+          >
+          </button>
+          <button
+            className="btnketerangan top-[170px] left-[470px]"
+            onClick={() =>
+              openPopup(
+                "Campuran tomat cincang, bawang bombay, dengan sentuhan garam, gula, dan air jeruk nipis yang segar.",
+                Bahan2,
+                "Pico de Gallo" // Menetapkan judul pop-up
+              )
+            }
+          >
+          </button>
+        </div>
         ) : null}
         <div className="flex flex-col justify-center items-center">
           <img
@@ -213,12 +257,16 @@ const Menu1 = () => {
         </div>
       </div>
       <div className="text-center mb-10">
-        <h1 className="font-foodname text-white text-7xl">
-          CHESSY NACHO DELIGHT
+        <h1 className="font-foodname text-white md:text-center text-7xl">
+            TACO FIESTA 
+        </h1>
+        <h1 className="font-foodname text-white md:text-center text-7xl">
+            with PICO DE GALLO
         </h1>
         <h2 className="font-foodname text-[#FBC531] text-5xl">
-          crispy tortilla chips
-          <p>with a delicious cheese sauce</p>
+          The perfect combination, authentic taco beef  
+          <p>fresh and appetizing touch of</p>
+          <p>Mexico's signature Pico de Gallo </p>
         </h2>
       </div>
       <div className="mt-4 bg-[#FA983A] p-5 pb-10 rounded w-[800px]">
@@ -231,8 +279,8 @@ const Menu1 = () => {
             />
           </div>
         </div>
-        <div className="text-2xl font-keterangan text-center mb-4">
-          Nacho adalah hidangan asli Meksiko yang sederhana, terdiri dari keripik tortilla yang disiram dengan saus keju.
+        <div className="text-2xl font-keterangan text-justify mb-4">
+            Taco adalah salah satu makanan khas Meksiko yang terdiri dari gulungan atau lipatan tortilla yang diisi dengan berbagai macam masakan lezat.
         </div>
       </div>
       <div className="mt-9 mb-5 flex justify-between items-center">
@@ -247,4 +295,4 @@ const Menu1 = () => {
   );
 };
 
-export default Menu1;
+export default Menu3;

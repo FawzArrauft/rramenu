@@ -11,8 +11,8 @@ import Bahan3 from "../assets/img/tortila.jpeg";
 import Icon from "../assets/img/mangi.png";
 import { Link } from "react-router-dom";
 
-const Menu1 = () => {
-  const [isPopupOpen, setPopupOpen] = useState(false);
+const Minuman1 = () => {
+    const [isPopupOpen, setPopupOpen] = useState(false);
   const [popupContent, setPopupContent] = useState("");
   const [popupImage, setPopupImage] = useState("");
   const [popupTitle, setPopupTitle] = useState(""); // Menambahkan state untuk judul pop-up
@@ -56,16 +56,16 @@ const Menu1 = () => {
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
+            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
+            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
           </span>
         </div>
         <div className="flex items-center flex-col mt-4">
           <p className="flavortext">UMAMI</p>
           <span className="flex items-center justify-center gap-1">
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
+            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
+            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
           </span>
@@ -76,27 +76,7 @@ const Menu1 = () => {
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
-          </span>
-        </div>
-        <div className="flex items-center flex-col mt-4 col-start-2">
-          <p className="flavortext">ASIN</p>
-          <span className="flex items-center justify-center gap-1">
             <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
-          </span>
-        </div>
-        <div className="flex items-center flex-col mt-4 col-start-4">
-          <p className="flavortext">PEDAS</p>
-          <span className="flex items-center justify-center gap-1">
-            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={solidStar} size="2x" className="text-[#FBC531]" />
-            <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
             <FontAwesomeIcon icon={regularStar} size="2x" className="text-[#FBC531]" />
           </span>
         </div>
@@ -135,31 +115,31 @@ const Menu1 = () => {
               className="btnketerangan top-[350px] left-[250px]"
               onClick={() =>
                 openPopup(
-                  "Keju yang dilelehkan hingga creamy dan gurihnya meleleh di mulut",
+                  "Meningkatkan pencernaan dan memberikan rasa asam yang unik.",
                   Bahan1,
-                  "Cheese Sauce" // Menetapkan judul pop-up
+                  "Asam Jawa" // Menetapkan judul pop-up
                 )
               }
             >
             </button>
             <button
-              className="btnketerangan top-[170px] left-[310px]"
+              className="btnketerangan top-[280px] left-[310px]"
               onClick={() =>
                 openPopup(
-                  "Campuran segar dengan tomat cincang, bawang bombay, garam, air jeruk nipis, gula, dan jeruk nipis yang berasal dari petani lokal di Bandung.",
+                  "Menghadirkan kelembutan teh melati yang menenangkan, dengan potensi manfaat antioksidan dan perawatan kulit.",
                   Bahan2,
-                  "Pico de Gallo" // Menetapkan judul pop-up
+                  "Teh Melati" // Menetapkan judul pop-up
                 )
               }
             >
             </button>
             <button
-              className="btnketerangan top-[110px] left-[150px]"
+              className="btnketerangan top-[200px] left-[550px]"
               onClick={() =>
                 openPopup(
-                  "Keripik tortilla yang ciptakan dari jagung segar, memberikan rasa renyah dan autentik.",
+                  "Menyajikan manfaat mineral penting seperti besi, kalsium, dan potasium.",
                   Bahan3,
-                  "Tortilla Chip" // Menetapkan judul pop-up
+                  "Gula Merah" // Menetapkan judul pop-up
                 )
               }
             >
@@ -169,40 +149,40 @@ const Menu1 = () => {
 
         {isPopupOpen ? (
           <div className="absolute">
-            <button
-              className="btnketerangan top-[350px] left-[420px]"
-              onClick={() =>
-                openPopup(
-                    "Keju yang dilelehkan hingga creamy dan gurihnya meleleh di mulut",
-                    Bahan1,
-                    "Cheese Sauce" // Menetapkan judul pop-up
-                )
-              }
-            >
-            </button>
-            <button
-              className="btnketerangan top-[170px] left-[470px]"
-              onClick={() =>
-                openPopup(
-                    "Campuran segar dengan tomat cincang, bawang bombay, garam, air jeruk nipis, gula, dan jeruk nipis yang berasal dari petani lokal di Bandung.",
-                    Bahan2,
-                    "Pico de Gallo" // Menetapkan judul pop-up
-                )
-              }
-            >
-            </button>
-            <button
-              className="btnketerangan top-[110px] left-[310px]"
-              onClick={() =>
-                openPopup(
-                    "Keripik tortilla yang ciptakan dari jagung segar, memberikan rasa renyah dan autentik.",
-                    Bahan3,
-                    "Tortilla Chip" // Menetapkan judul pop-up
-                )
-              }
-            >
-            </button>
-          </div>
+          <button
+            className="btnketerangan top-[350px] left-[420px]"
+            onClick={() =>
+              openPopup(
+                "Meningkatkan pencernaan dan memberikan rasa asam yang unik.",
+                  Bahan1,
+                "Asam Jawa" // Menetapkan judul pop-up
+              )
+            }
+          >
+          </button>
+          <button
+            className="btnketerangan top-[280px] left-[475px]"
+            onClick={() =>
+              openPopup(
+                "Menghadirkan kelembutan teh melati yang menenangkan, dengan potensi manfaat antioksidan dan perawatan kulit.",
+                  Bahan2,
+                  "Teh Melati" // Menetapkan judul pop-up
+              )
+            }
+          >
+          </button>
+          <button
+            className="btnketerangan top-[200px] left-[710px]"
+            onClick={() =>
+              openPopup(
+                "Menyajikan manfaat mineral penting seperti besi, kalsium, dan potasium.",
+                  Bahan3,
+                  "Gula Merah" // Menetapkan judul pop-up
+              )
+            }
+          >
+          </button>
+        </div>
         ) : null}
         <div className="flex flex-col justify-center items-center">
           <img
@@ -213,15 +193,14 @@ const Menu1 = () => {
         </div>
       </div>
       <div className="text-center mb-10">
-        <h1 className="font-foodname text-white text-7xl">
-          CHESSY NACHO DELIGHT
+        <h1 className="font-foodname text-white md:text-center text-7xl">
+            FRESH TAMARIND TEA
         </h1>
         <h2 className="font-foodname text-[#FBC531] text-5xl">
-          crispy tortilla chips
-          <p>with a delicious cheese sauce</p>
+          A refreshing drink that combines unique flavor of tamarind with the softness of jasmine tea.
         </h2>
       </div>
-      <div className="mt-4 bg-[#FA983A] p-5 pb-10 rounded w-[800px]">
+      <div className="bg-[#FA983A] p-5 pb-4 rounded w-[800px]">
         <div className="text-5xl font-keterangan mb-7 text-end">#FOOD_FACT
           <div className="absolute transform -translate-x-14 -translate-y-24">
             <img
@@ -231,8 +210,10 @@ const Menu1 = () => {
             />
           </div>
         </div>
-        <div className="text-2xl font-keterangan text-center mb-4">
-          Nacho adalah hidangan asli Meksiko yang sederhana, terdiri dari keripik tortilla yang disiram dengan saus keju.
+        <div className="text-2xl font-keterangan text-justify mb-1">
+        Tamarind, yang juga dikenal sebagai asam jawa, telah memperkaya masakan dan pengobatan tradisional selama ribuan tahun di berbagai wilayah tropis. 
+        Asam jawa memberikan sentuhan asam unik pada hidangan dan telah menjadi unsur penting dalam masakan global. 
+        Dalam pengobatan tradisional, asam jawa membantu meredakan masalah pencernaan dan demam.
         </div>
       </div>
       <div className="mt-9 mb-5 flex justify-between items-center">
@@ -247,4 +228,4 @@ const Menu1 = () => {
   );
 };
 
-export default Menu1;
+export default Minuman1;
